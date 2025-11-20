@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAVI STORE | Collections</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">
+        <span class="logo-main">NAVI</span> <span class="logo-sub">STORE</span>
+      </div>
+      <div class="brand-tagline">Premium Free Fire Accounts</div>
+    </div>
+
+    <div class="nav-right">
+      <!-- desktop links -->
+      <nav class="nav-links">
+        <a href="index.html" class="NAV_HOME">Home</a>
+        <a href="collections.html" class="NAV_COLLECTIONS">Collections</a>
+        <a href="sold.html" class="NAV_SOLD">Sold</a>
+        <a href="about.html" class="NAV_ABOUT">About Us</a>
+        <a href="contact.html" class="NAV_CONTACT">Contact</a>
+      </nav>
+
+      <!-- theme toggle stays visible on all sizes -->
+      <button class="theme-toggle" type="button" data-theme-toggle>
+        <span data-theme-icon>🌙</span>
+        <span data-theme-label>Dark</span>
+      </button>
+
+      <!-- hamburger (only visible on mobile) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu (appears under header on small screens) -->
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="collections.html">Collections</a>
+  <a href="sold.html">Sold</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-kicker">Collections</div>
+        <h1 class="page-title">Featured Free Fire accounts</h1>
+        <p class="page-subtitle">
+          Use the search and price filter to quickly find the right account.
+          You can edit the names, levels, rank details and prices any time.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <!-- FILTER BAR -->
+      <div class="container">
+        <div class="filter-bar">
+          <div class="filter-group" style="flex:1 1 220px;">
+            <label class="field-label" for="search">Search</label>
+            <input
+              id="search"
+              type="text"
+              class="input"
+              placeholder="Search by name, rank, region..."
+              data-search
+            />
+          </div>
+
+          <div class="filter-group">
+            <label class="field-label" for="price">Price range</label>
+            <select id="price" class="select" data-price-filter>
+              <option value="all">All prices</option>
+              <option value="0-10000">0 – 10,000</option>
+              <option value="10000-50000">10,000 – 50,000</option>
+              <option value="50000-100000">50,000 – 100,000</option>
+              <option value="100000-500000">100,000 – 500,000</option>
+              <option value="500000+">Above 500,000</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCOUNT CARDS -->
+      <div class="container grid-3">
+
+        <!-- ACCOUNT 1 -->
+        <article class="card account-card" data-id="acc1" data-price="8000">
+          <div class="account-thumb">
+            <img
+              src="navi-acc1.jpg"
+              alt="Free Fire account 1 preview"
+              data-preview
+            />
+          </div>
+
+          <div class="account-header">
+            <div class="account-name">Account #1</div>
+            <div class="account-tier">Premium</div>
+          </div>
+
+          <div class="account-meta">
+            <!-- edit later -->
+            Level XX • Rank: XXXXX<br />
+            Region: XXXXX • Linked: XXXXX
+          </div>
+
+          <div class="account-price">
+            Price: <span>₹8,000</span>
+          </div>
+
+          <div class="pills">
+            <span class="pill">Edit bundle info</span>
+            <span class="pill">Edit gun skins info</span>
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/94775698175?text=Hi%20NAVI%20STORE%2C%20I%20am%20interested%20in%20Account%20%231."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ask about this account →
+          </a>
+        </article>
+
+        <!-- ACCOUNT 2 -->
+        <article class="card account-card" data-id="acc2" data-price="25000">
+          <div class="account-thumb">
+            <img
+              src="navi-acc2.jpg"
+              alt="Free Fire account 2 preview"
+              data-preview
+            />
+          </div>
+
+          <div class="account-header">
+            <div class="account-name">Account #2</div>
+            <div class="account-tier">Premium</div>
+          </div>
+
+          <div class="account-meta">
+            Level XX • Rank: XXXXX<br />
+            Region: XXXXX • Linked: XXXXX
+          </div>
+
+          <div class="account-price">
+            Price: <span>₹25,000</span>
+          </div>
+
+          <div class="pills">
+            <span class="pill">Edit bundles info</span>
+            <span class="pill">Edit emotes info</span>
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/94775698175?text=Hi%20NAVI%20STORE%2C%20I%20am%20interested%20in%20Account%20%232."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ask about this account →
+          </a>
+        </article>
+
+        <!-- ACCOUNT 3 -->
+        <article class="card account-card" data-id="acc3" data-price="45000">
+          <div class="account-thumb">
+            <img
+              src="navi-acc3.jpg"
+              alt="Free Fire account 3 preview"
+              data-preview
+            />
+          </div>
+
+          <div class="account-header">
+            <div class="account-name">Account #3</div>
+            <div class="account-tier">Premium</div>
+          </div>
+
+          <div class="account-meta">
+            Level XX • Rank: XXXXX<br />
+            Region: XXXXX • Linked: XXXXX
+          </div>
+
+          <div class="account-price">
+            Price: <span>₹45,000</span>
+          </div>
+
+          <div class="pills">
+            <span class="pill">Edit stats info</span>
+            <span class="pill">Edit gun skins info</span>
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/94775698175?text=Hi%20NAVI%20STORE%2C%20I%20am%20interested%20in%20Account%20%233."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ask about this account →
+          </a>
+        </article>
+
+        <!-- ACCOUNT 4 -->
+        <article class="card account-card" data-id="acc4" data-price="120000">
+          <div class="account-thumb">
+            <img
+              src="navi-acc4.jpg"
+              alt="Free Fire account 4 preview"
+              data-preview
+            />
+          </div>
+
+          <div class="account-header">
+            <div class="account-name">Account #4</div>
+            <div class="account-tier">Premium</div>
+          </div>
+
+          <div class="account-meta">
+            Level XX • Rank: XXXXX<br />
+            Region: XXXXX • Linked: XXXXX
+          </div>
+
+          <div class="account-price">
+            Price: <span>₹1,20,000</span>
+          </div>
+
+          <div class="pills">
+            <span class="pill">Edit collection info</span>
+            <span class="pill">Edit extra notes</span>
+          </div>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/94775698175?text=Hi%20NAVI%20STORE%2C%20I%20am%20interested%20in%20Account%20%234."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ask about this account →
+          </a>
+        </article>
+
+      </div>
+
+      <div class="container" style="margin-top:1.8rem;">
+        <!---<p class="page-subtitle">
+          ✏️ Change the <code>data-price="..."</code> value on each card to the real price (without commas).
+          The filter uses that number, not the text.
+        </p>--->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> NAVI STORE. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global image preview overlay -->
+  <div class="preview-overlay" data-preview-overlay>
+    <div class="preview-inner">
+      <button type="button" class="preview-close" data-preview-close>&times;</button>
+      <img src="" alt="Account preview" data-preview-image />
+    </div>
+  </div>
+</body>
+</html>

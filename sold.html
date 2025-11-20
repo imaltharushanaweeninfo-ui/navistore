@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAVI STORE | Sold Accounts</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">
+        <span class="logo-main">NAVI</span> <span class="logo-sub">STORE</span>
+      </div>
+      <div class="brand-tagline">Premium Free Fire Accounts</div>
+    </div>
+
+    <div class="nav-right">
+      <!-- desktop links -->
+      <nav class="nav-links">
+        <a href="index.html" class="NAV_HOME">Home</a>
+        <a href="collections.html" class="NAV_COLLECTIONS">Collections</a>
+        <a href="sold.html" class="NAV_SOLD">Sold</a>
+        <a href="about.html" class="NAV_ABOUT">About Us</a>
+        <a href="contact.html" class="NAV_CONTACT">Contact</a>
+      </nav>
+
+      <!-- theme toggle stays visible on all sizes -->
+      <button class="theme-toggle" type="button" data-theme-toggle>
+        <span data-theme-icon>🌙</span>
+        <span data-theme-label>Dark</span>
+      </button>
+
+      <!-- hamburger (only visible on mobile) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu (appears under header on small screens) -->
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="collections.html">Collections</a>
+  <a href="sold.html">Sold</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-kicker">Sold accounts</div>
+        <h1 class="page-title">Completed NAVI STORE deals</h1>
+        <!---<p class="page-subtitle">
+          When an account is sold, we move it here and mark it with a <strong>Sold out</strong> ribbon.
+          The same account can be hidden from the Collections page using our sold list in <code>script.js</code>.
+        </p>--->
+      </div>
+    </section>
+
+    <!-- SOLD CARDS -->
+    <section class="section">
+      <div class="container grid-3">
+
+        <!-- SOLD ACCOUNT 1 (example for acc1) -->
+        <article class="card">
+          <div class="sold-ribbon-wrapper">
+            <img src="navi-acc1.jpg" alt="Sold Free Fire account 1" />
+            <span class="sold-ribbon">Sold out</span>
+          </div>
+
+          <div class="account-header" style="margin-top:0.8rem;">
+            <div class="account-name">Account #1</div>
+            <div class="account-tier">Premium</div>
+          </div>
+
+          <div class="account-meta">
+            Level XX • Rank: XXXXX<br />
+            Region: XXXXX • Linked: XXXXX
+          </div>
+
+          <div class="account-price">
+            Final price: <span>₹8,000</span>
+          </div>
+
+          <div class="pills" style="margin-top:0.5rem;">
+            <span class="pill">Add main highlights</span>
+            <span class="pill">Add buyer region</span>
+          </div>
+        </article>
+
+        <!-- SOLD ACCOUNT 2 (example for acc2) -->
+        <article class="card">
+          <div class="sold-ribbon-wrapper">
+            <img src="navi-acc2.jpg" alt="Sold Free Fire account 2" />
+            <span class="sold-ribbon">Sold out</span>
+          </div>
+
+          <div class="account-header" style="margin-top:0.8rem;">
+            <div class="account-name">Account #2</div>
+            <div class="account-tier">Premium</div>
+          </div>
+
+          <div class="account-meta">
+            Level XX • Rank: XXXXX<br />
+            Region: XXXXX • Linked: XXXXX
+          </div>
+
+          <div class="account-price">
+            Final price: <span>₹25,000</span>
+          </div>
+
+          <div class="pills" style="margin-top:0.5rem;">
+            <span class="pill">Add bundle list</span>
+            <span class="pill">Add buyer country</span>
+          </div>
+        </article>
+
+       
+        <!-- If you sell Account #4 later, you can copy one more card for img/navi-acc4.jpg -->
+
+      </div>
+
+      <div class="container" style="margin-top:1.8rem;">
+        <p class="page-subtitle">
+          <!---✏️ When you sell a new account:
+          <br />1) Add a card here with <code>img/...</code> and the <code>&lt;span class="sold-ribbon"&gt;</code>.
+          <br />2) Add its ID (like <code>"acc1"</code>) to <code>SOLD_ACCOUNT_IDS</code> in <code>script.js</code> so it hides from Collections.
+        </p>--->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> NAVI STORE. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="collections.html">View live listings →</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
